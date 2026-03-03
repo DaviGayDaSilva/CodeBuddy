@@ -163,7 +163,7 @@ if __name__ == "__main__":
     asyncio.run(main())'''
     
     elif "data" in request_lower or "banco" in request_lower or "sql" in request_lower:
-        return '''import sqlite3
+        return """import sqlite3
 from datetime import datetime
 
 class Database:
@@ -206,7 +206,7 @@ class Database:
 if __name__ == "__main__":
     db = Database()
     db.execute("INSERT INTO users (username, email) VALUES (?, ?)", ("codenexus", "ai@opensource.dev"))
-    print("Banco de dados criado! 🗄️")'''
+    print("Banco de dados criado! 🗄️")"""
     
     else:
         if language == "python":
