@@ -28,7 +28,7 @@ def build_apk():
         return False
     
     # Verificar arquivos necessários
-    if not os.path.exists("/workspace/project/codenexus_apk.py"):
+    if not os.path.exists("/workspace/project/CodeBuddy/codenexus_apk.py"):
         print("❌ Arquivo codenexus_apk.py não encontrado!")
         return False
     
@@ -91,11 +91,11 @@ B) BUILD REMOTO (simplificado):
 
 C) TESTAR EMULADOR:
    
-   flet run --android /workspace/project/codenexus_apk.py
+   flet run --android /workspace/project/CodeBuddy/codenexus_apk.py
 
 D) TESTAR WEB:
    
-   flet run /workspace/project/codenexus_apk.py --web
+   flet run /workspace/project/CodeBuddy/codenexus_apk.py --web
 
 """)
     
